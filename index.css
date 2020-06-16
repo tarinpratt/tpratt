@@ -1,0 +1,560 @@
+body {
+    box-sizing: border-box;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(images/cactusflower.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+}
+
+body.projectsBody {
+    box-sizing: border-box;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/desertrocks.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+body.navBody {
+    box-sizing: border-box;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(images/cactusflower.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+.logoContainer {
+    text-align: center;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 4s; 
+}
+
+.tlpImg {
+    height: 100px;
+    width: 100px;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 5s;
+}
+
+h1 {
+    margin-top: 125px;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 7px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 4s;
+    text-transform: uppercase;  
+}
+
+h2 {
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 7s;
+    text-transform: uppercase;  
+}
+
+.arrow {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 200px;
+}
+
+.navArrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 20px;  
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 10s;  
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);   
+}
+
+nav {
+    top: 0;
+    background-color: rgba(5, 5, 5, 0.6);
+}
+
+ul {
+    padding-top: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+}  
+
+a.navLinks:hover {
+    text-decoration: underline;
+}
+
+img.tlpImgNav {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
+}
+
+.navList {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+ul#js-menu.navList.active {
+    text-align: right;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+a.navLinks {
+    font-size: 15px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+h2.aboutHeader {
+    width: 400px;
+    animation-name: moveFromLeft;
+    animation-duration: 5s;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nestedAboutContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.languages {
+    width: 350px;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(7, 41, 12, 0.8);
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 7s;  
+}
+
+.about {
+    color: white;
+    line-height: 30px;
+    font-size: 20px;
+    background-color: rgba(7, 41, 12, 0.8);
+    font-family: 'Poiret One', cursive;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    animation-name: moveFromRight;
+    animation-duration: 5s;
+}
+
+.desertPitch {
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+    margin: 20px;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 7s;  
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.crop {
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+    animation-name: moveFromRight;
+    animation-duration: 5s;
+}
+
+i {
+    color: white;
+    margin-right: 10px;
+}
+
+ul.contactList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 40px;
+    animation-name: moveFromLeft;
+    animation-duration: 5s;
+}
+
+.contactLinks {
+    font-size: 20px;
+}
+
+i:hover, .contactLinks:hover {
+    color: rgb(240, 49, 81);
+}
+
+ul.projectList {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: none;
+    animation-name: moveFromBottom;
+    animation-duration: 5s;
+}
+
+ul.projectListMobile {
+    display: none;
+}
+
+.projectFront {
+    position: relative;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    margin: 10px;
+    list-style-type: none;
+}
+
+.flip-container {
+    margin: 20px;
+    perspective: 1000;
+    display: inline-block;
+}
+
+.flip-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card, .front, .back {
+    width: 250px;
+    height: 200px;
+}
+
+.card {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.front {
+    z-index: 1;
+    transform: rotateY(180deg);
+    color: white;
+    background-color: rgba(46, 117, 224, 0.555);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    font-family: 'Poiret One', cursive;
+}
+
+h3 {
+    text-decoration: underline;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p.projectDescription {
+    text-align: center;
+    text-transform: none;
+}
+
+p.projectLanguages {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.back {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.projectImg {
+    width: 250px;
+    height: 200px;
+}
+
+a.liveProjectLinks:hover, a.repoProjectLinks:hover {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 0.4s;
+    border: 1px solid black;
+}
+a.liveProjectLinks {
+    padding: 7px;
+    margin-left: 60px;
+    margin-right: 0;
+    font-size: 15px;
+    background-color: rgb(12, 12, 12, 0.6);
+}
+
+a.repoProjectLinks {
+    padding: 7px;
+    font-size: 15px;
+    background-color: rgb(12, 12, 12, 0.6);
+}
+
+@keyframes moveFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translate(100);
+    }
+
+  }
+
+  @keyframes moveFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translate(100);
+    }
+
+  }
+
+  @keyframes moveFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translate(100);
+    }
+
+  }
+
+  @keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+    a.contactLinks {
+        font-size: 15px;
+    }
+}    
+
+@media only screen and (max-width: 716px) {
+    ul.projectList {
+        display: none;
+    }
+
+    ul.projectListMobile {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: none;
+        animation-name: moveFromBottom;
+        animation-duration: 5s;
+    }
+
+    li.projectFront {
+        position: relative;
+        display: inline-block;
+    }
+
+    a.liveProjectLinks, a.repoProjectLinks {
+        position: absolute;
+        margin: 0 auto;
+        left: 16%;
+        top: 40%; 
+        text-align: center;
+        width: 70px;
+    }
+
+    a.repoProjectLinks {
+        position: absolute;
+        margin: 0 auto;
+        left: 50%;
+        top: 40%;
+        text-align: center;
+        width: 70px;
+    }
+
+    .projectBack {
+        color: white;
+        background-color: rgba(7, 41, 12, 0.4);
+        max-width: 330px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-family: 'Poiret One', cursive;
+        padding-top: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    p.projectDescription {
+        line-height: 20px;
+        text-align: left;
+        padding-left: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    p.projectLanguages {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        margin-bottom: 0;
+    }
+  }
+
+@media only screen and (max-width: 700px) {
+    body {
+        width: 100%;
+    }
+
+    .aboutContainer {
+        flex-direction: column; 
+    }
+
+    .aboutHeader {
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .desertPitch {
+        height: 200px;
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .about {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .crop, .contactList {
+        margin-right: auto;
+        margin-left: auto; 
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navList {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    a.navLinks {
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    
+   .navbar-toggle {
+       display: none;
+    }
+} 
