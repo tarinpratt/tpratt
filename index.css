@@ -568,7 +568,11 @@ a.repoProjectLinks {
     }
 }   
 
-@media screen and (min-color-index: 0) and (-webkit-min-device-pixel-ratio: 0) { @media {
+@media screen and (min-color-index: 0) and (-webkit-min-device-pixel-ratio: 0) {
+     @media {
+    .crop {
+        display: none;
+    }     
     ul.projectList {
         display: none;
     }
